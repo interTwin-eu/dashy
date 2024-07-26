@@ -1,46 +1,59 @@
----
-# Page meta info, like heading, footer text and nav links
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
-  navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
-
-# Optional app settings and configuration
-appConfig:
-  theme: colorful
-
-# Main content - An array of sections, each containing an array of items
+  title: interTwin DTE entrypoint
 sections:
-- name: Getting Started
-  icon: fas fa-rocket
-  items:
-  - title: Dashy Live
-    description: Development a project management links for Dashy
-    icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    url: https://live.dashy.to/
-    target: newtab
-  - title: GitHub
-    description: Source Code, Issues and Pull Requests
-    url: https://github.com/lissy93/dashy
-    icon: favicon
-  - title: Docs
-    description: Configuring & Usage Documentation
-    provider: Dashy.to
-    icon: far fa-book
-    url: https://dashy.to/docs
-  - title: Showcase
-    description: See how others are using Dashy
-    url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    icon: far fa-grin-hearts
-  - title: Config Guide
-    description: See full list of configuration options
-    url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-    icon: fas fa-wrench
-  - title: Support
+  - name: interTwin Project
+    widgets: 
+    - type: image
+      options:
+        imagePath: /logo.png
+    items:
+      - title: Website
+        url: http://www.interTwin.eu
+        icon: favicon
+  - name: Data Lake Services
+    icon: far fa-server
+    items:
+      - title: Rucio
+        description: Rucio server
+        icon: far fa-server
+        url: https://rucio-intertwin-testbed.desy.de
+        target: newtab
+      - title: FTS Server Monitoring GUI
+        description: FTS server instance for interTwin
+        icon: far fa-server 
+        url: https://fts-egi.cern.ch:8449/fts3/ftsmon/
+        target: newtab
+  - name: AI Orchestrator
+    icon: far fa-server
+    items:
+      - title: PaaS Orchestrator
+        description: PaaS Orchestrator
+        icon: far fa-server
+        url: https://eosc-paas.cloud.ba.infn.it
+        target: newtab
+  - name: Workflows
+    icon: far fa-server
+    items:
+      - title: MLFLow
+        description: MLFLow instance for interTwin
+        icon: hl-mlflow
+        url: https://mlflow.intertwin.fedcloud.eu/
+        target: newtab
+  - name: AAI 
+    icon: far fa-server
+    items:
+      - title: EGI Check-in
+        description:
+        icon:  far fa-server
+        url: https://aai-demo.egi.eu
+        target: newtab
+appConfig:
+  statusCheckInterval: 20
+  statusCheck: true
+  theme: default
+  layout: vertical
+  iconSize: small
+  language: en
     description: Get help with Dashy, raise a bug, or get in contact
     url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
     icon: far fa-hands-helping
