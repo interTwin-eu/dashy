@@ -2,14 +2,23 @@ pageInfo:
   title: interTwin DTE entrypoint
 sections:
   - name: interTwin Project
-    widgets: 
-    - type: image
-      options:
-        imagePath: /logo.png
     items:
       - title: Website
         url: http://www.interTwin.eu
         icon: favicon
+  - name: Cloud Services
+    icon: generative
+    items:
+      - title: GRNET Openstack
+        description: GRNET Openstack Horizon Dashboard
+        icon: generative
+        url: https://ui.cloud.grnet.gr/
+        target: newtab
+      - title: UKRI Openstak
+        description: UKRI Openstack Horizon Dashboard
+        icon: generative
+        url: https://openstack.stfc.ac.uk//
+        target: newtab
   - name: Data Lake Services
     icon: far fa-server
     items:
@@ -20,7 +29,7 @@ sections:
         target: newtab
       - title: FTS Server Monitoring GUI
         description: FTS server instance for interTwin
-        icon: far fa-server 
+        icon: far fa-server
         url: https://fts-egi.cern.ch:8449/fts3/ftsmon/
         target: newtab
   - name: AI Orchestrator
@@ -34,12 +43,17 @@ sections:
   - name: Workflows
     icon: far fa-server
     items:
+      - title: OSCAR
+        description: OSCAR Cluster for interTwin
+        icon: far fa-server
+        url: https://beautiful-lederberg3.im.grycap.net/
+        target: newtab
       - title: MLFLow
         description: MLFLow instance for interTwin
         icon: hl-mlflow
         url: https://mlflow.intertwin.fedcloud.eu/
         target: newtab
-  - name: AAI 
+  - name: AAI
     icon: far fa-server
     items:
       - title: EGI Check-in
@@ -47,4 +61,10 @@ sections:
         icon:  far fa-server
         url: https://aai-demo.egi.eu
         target: newtab
-  
+appConfig:
+  statusCheckInterval: 20
+  statusCheck: true
+  theme: default
+  layout: vertical
+  iconSize: small
+  language: en
