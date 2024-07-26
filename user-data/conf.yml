@@ -47,14 +47,4 @@ sections:
         icon:  far fa-server
         url: https://aai-demo.egi.eu
         target: newtab
-appConfig:
-  statusCheckInterval: 20
-  statusCheck: true
-  theme: default
-  layout: vertical
-  iconSize: small
-  language: en
-    description: Get help with Dashy, raise a bug, or get in contact
-    url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-    icon: far fa-hands-helping
   
