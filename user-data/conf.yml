@@ -61,6 +61,14 @@ sections:
         icon:  far fa-server
         url: https://aai-demo.egi.eu
         target: newtab
+   - name: SQAaaS
+    icon: far fa-server
+    items:
+      - title: Software quality as a server
+        description:
+        icon:  far fa-server
+        url: https://sqaaas.eosc-synergy.eu/
+        target: newtab
 appConfig:
   statusCheckInterval: 20
   statusCheck: true
