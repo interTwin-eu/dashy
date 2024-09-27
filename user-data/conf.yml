@@ -32,7 +32,7 @@ sections:
         icon: far fa-server
         url: https://fts-egi.cern.ch:8449/fts3/ftsmon/
         target: newtab
- - name: AI Orchestrator
+  - name: AI Orchestrator
     icon: far fa-server
     items:
       - title: PaaS Orchestrator
